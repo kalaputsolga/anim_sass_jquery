@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Forms-Animations</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<div class="modal-wrap">
+		<div class="modal-header">
+			<span class="is-active"></span>
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="modal-bodies">
+			<div class="modal-body modal-body-step-1 is-showing">
+				<div class="title">Step 1</div>
+				<div class="description">Hello there! Let's play a game.</div>
+				<form action="#">
+					<input type="text" placeholder="Name">
+					<input type="email" placeholder="Email">
+					<div class="text-center">
+						<div class="button">Start</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-body modal-body-step-2">
+				<div class="title">Step 2</div>
+				<div class="description">Would you rather...</div>
+				<form action="#">
+					<label>
+						<input type="radio" name="radio">
+						live one life that last 1000 years?
+					</label>
+					<label>
+						<input type="radio" name="radio" id="radio2">
+						live 10 lives that last 100 years each?
+					</label>
+					<div class="text-center fade-in">
+						<div class="button">Next</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-body modal-body-step-3">
+				<div class="title">Step 3</div>
+				<div class="description">Check your email for the game results.</div>
+				<div class="text-center">
+					<div class="button">Done!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center">
+		<div class="rerun-button">ReRun</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

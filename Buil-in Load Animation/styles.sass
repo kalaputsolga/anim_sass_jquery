@@ -1,0 +1,122 @@
+body
+  min-height: 100vh
+  background: radial-gradient(farthest-corner at 40px 40px,#8e9eab 0%, #eef2f3 100%)
+  padding: 20px
+  font-family: 'Roboto Slab', serif
+
+.header
+  background: #A4D9DB
+  text-align: center
+  overlfow: hidden
+
+.text
+  padding: 30px 10px
+  font-size: 30px
+  color: #fff
+  text-transform: uppercase
+  letter-spacing: 3px
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2)
+
+.website
+  margin: 50px auto
+  background: #fff
+  max-width: 1150px
+  box-shadow: 0px 25px 30px -20px rgba(0,0,0,0.2)
+  box-sizing: border-box
+
+.grid
+  padding: 10px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-wrap: wrap
+  perspective: 1000px
+  .item
+    background: #eef2f3
+    height: 60px
+    margin: 10px
+    height: 300px
+    border-radius: 4px
+    padding: 20px
+    box-sizing: border-box
+    color: white
+    width: 200px
+    background:
+      position: center
+      size: cover
+
+    &:nth-child(1)
+      background-image: url(./Images/1.jpg)
+    &:nth-child(2)
+      background-image: url(./Images/2.jpg)
+    &:nth-child(3)
+      background-image: url(./Images/3.jpg)
+    &:nth-child(4)
+      background-image: url(./Images/4.jpg)
+    &:nth-child(5)
+      background-image: url(./Images/5.jpg)
+    &:nth-child(6)
+      background-image: url(./Images/6.jpg)
+    &:nth-child(7)
+      background-image: url(./Images/7.jpg)
+    &:nth-child(8)
+      background-image: url(./Images/8.jpg)
+    &:nth-child(9)
+      background-image: url(./Images/9.jpg)
+    &:nth-child(10)
+      background-image: url(./Images/10.jpg)
+    &:nth-child(11)
+      background-image: url(./Images/11.jpg)
+    &:nth-child(12)
+      background-image: url(./Images/12.jpg)
+    &:nth-child(13)
+      background-image: url(./Images/13.jpg)
+    &:nth-child(14)
+      background-image: url(./Images/14.jpg)
+    &:nth-child(15)
+      background-image: url(./Images/15.jpg)
+    &:nth-child(16)
+      background-image: url(./Images/16.jpg)
+    &:nth-child(17)
+      background-image: url(./Images/17.jpg)
+    &:nth-child(18)
+      background-image: url(./Images/18.jpg)
+    &:nth-child(19)
+      background-image: url(./Images/19.jpg)
+    &:nth-child(20)
+      background-image: url(./Images/20.jpg)
+
+	
+//Animation
+.item
+  opacity: 0
+
+.item.is-visible
+  animation: Items 500ms ease-in-out forwards
+
+@keyframes Items
+  0%
+    opacity: 0
+    transform: scale(0.3) rotateY(90deg)
+  60%
+    transform: scale(1.3) 
+  90%
+    transform: scale(1)
+  100%
+    opacity: 1
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	
+    
+    
